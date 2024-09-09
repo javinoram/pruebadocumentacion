@@ -1,13 +1,13 @@
 push!(LOAD_PATH,"../src/")
-using prueba-documentacion
+using pruebadocumentacion
 
 using Documentermakedocs(
-  sitename = "prueba-documentacion",
-  modules  = [prueba-documentacion],
+  sitename = "pruebadocumentacion",
+  modules  = [pruebadocumentacion],
   pages=[
       "Home" => "index.md"
   ])
 
 deploydocs(;
-  repo="github.com/javinoram/prueba-documentacion",
+  repo="github.com/javinoram/pruebadocumentacion",
 )
