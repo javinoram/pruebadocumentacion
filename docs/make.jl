@@ -1,9 +1,10 @@
 push!(LOAD_PATH,"../src/")
-#using pruebadocumentacion
+using pruebadocumentacion
 
-using Documentermakedocs(
+using Documenter
+makedocs(
   sitename = "pruebadocumentacion",
-  #modules  = [pruebadocumentacion],
+  modules  = [pruebadocumentacion],
   pages=[
       "Home" => "index.md"
   ])
